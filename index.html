@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<title>kiranweb</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\KIRAN SUTAR\OneDrive\Desktop\my port\lightbox.css">
+
+</head>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    #header {
+        margin: auto;
+    }
+    
+    .w3-row-padding img {
+        margin-bottom: 12px;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    nav {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        background: #1b1b1b;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+        position: fixed;
+    }
+    
+    nav .logo {
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0 5px;
+    }
+    
+    nav ul li a {
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+    
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #111;
+        background: #fff;
+    }
+    
+    nav .menu-btn i {
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    input[type="checkbox"] {
+        display: contents;
+    }
+    
+    @media (max-width: 1000px) {
+        nav {
+            padding: 0 40px 0 50px;
+        }
+    }
+    
+    @media (max-width: 920px) {
+        nav .menu-btn i {
+            display: block;
+        }
+        #click:checked~.menu-btn i:before {
+            content: "\f00d";
+        }
+        nav ul {
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            background: #111;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        #click:checked~ul {
+            left: 0;
+        }
+        nav ul li {
+            width: 100%;
+            margin: 40px 0;
+        }
+        nav ul li a {
+            width: 100%;
+            margin-left: -100%;
+            display: block;
+            font-size: 20px;
+            transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        #click:checked~ul li a {
+            margin-left: 0px;
+        }
+        nav ul li a.active,
+        nav ul li a:hover {
+            background: none;
+            color: cyan;
+        }
+    }
+    
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    
+    #main {
+        margin-left: 0px
+    }
+    /* Remove margins from "page content" on small screens */
+    
+    @media only screen and (max-width: 300px) {
+        #main {
+            margin-left: 0
+        }
+    }
+    
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    .contact-list {
+        list-style-type: none;
+        margin-left: -30px;
+        padding-right: 20px;
+        margin: 0 auto;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .certificate {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%;
+    }
+    
+    .ccc {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px;
+    }
+    
+    .certificate img {
+        width: 70%;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid white;
+    }
+    
+    .responsive {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+</style>
+
+<body class="w3-black">
+    <nav>
+        <br><br>
+        <div class="logo"><i>Kiran's</i><strong><u>WEB</u></strong></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        
+            <div class="line1"></div>
+		    <div class="line2"></div>
+		    <div class="line3"></div>
+            
+          </label>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about ">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#social">Follow me</a></li>
+        </ul>
+    </nav>
+    <br> <br>
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-text-white " id="home">
+            <h2 class="">I'm Kiran Sutar.</h2>
+            <p>Web Devloper & UI/UX Designer.</p>
+            <img src="E:\from download\desktop\my port\img\294853972_743213396961449_5543127504545350679_n.jpg" class="responsive">
+        </header>
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-white w3-padding-64 " id="about">
+            <h2 class="w3-text-white ">Mr.kiran sutar</h2>
+            <hr style="width:250px " class="w3-opacity ">
+            <p> I’m kiran a software engineer who loves creating websites and apps as well as i am also intrested in electronics and i recentelly complete my polytechinic in E&TC and going to take admission for b.tech in IT in upcoming year i also done some
+                vocational courses in web devlopment and done 6 months internship at Briliance infotech as full stack developer.
+            </p>
+            <p> I believe that you have to be able to see the big picture when you’re building something, and that’s why I like to work with a team. It’s also why I love working in groups where everyone has a voice, but we all work together toward the same
+                goal—to make your site better than you could ever do on your own.
+            </p>
+            <br>
+            <!--eductional details table-->
+            <H3 class="w3-text-white">Educational Details</H3>
+            <table style="width:100%">
+                <tr>
+                    <th>Qaulification / courses</th>
+                    <th>Result</th>
+                    <th>Passing Year</th>
+                </tr>
+                <tr>
+                    <td>S.S.C</td>
+                    <td>78.80%</td>
+                    <td>2019-20</td>
+                </tr>
+                <tr>
+                    <td>MSC-IT</td>
+                    <td>86%%</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Web devlopment</td>
+                    <td>79.00%</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Polytechnic (E&TC)</td>
+                    <td>67.77%</td>
+                    <td>2022-23</td>
+                </tr>
+            </table>
+
+            <!--end eductional details table-->
+
+            <h3 class="w3-padding-16 w3-text-light-grey ">My Skills</h3>
+            <p class="w3-wide ">HTML & CSS</p>
+            <div class="w3-white ">
+                <div class="w3-dark-grey " style="height:28px;width:95% "></div>
+            </div>
+            <p class="w3-wide ">Java Script</p>
+            <div class="w3-white ">
+                <div class="w3-dark-grey " style="height:28px;width:75% "></div>
+            </div>
+            <p class="w3-wide ">My Sql & php</p>
+            <div class="w3-white ">
+                <div class="w3-dark-grey " style="height:28px;width:65% "></div>
+            </div>
+            <p class="w3-wide ">MS office and basic computer</p>
+            <div class="w3-white ">
+                <div class="w3-dark-grey " style="height:28px;width:97% "></div>
+            </div>
+            <p class="w3-wide ">Leadership and communication</p>
+            <div class="w3-white ">
+                <div class="w3-dark-grey " style="height:28px;width:95% "></div>
+            </div>
+
+            <br>
+
+
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-section ">
+                <a href="E:\from download\desktop\presnol info\Document1 resume.pdf" download>
+              <i class="fa fa-download"></i> Download Resume
+            </a>
+           </button>
+
+
+            <!-- Portfolio Section -->
+            <!-- Portfolio  PROJECT Section -->
+            <div class="w3-padding-64 w3-content " id="project">
+                <h2 class="w3-text-light-grey ">My project</h2>
+                <hr style="width:200px " class="w3-opacity ">
+
+                <!-- Grid for  PROJECT -->
+                <div class="w3-row-padding " style="margin:0 -16px ">
+                    <div class="w3-half ">
+
+                        Not Available yet !coming soon
+                    </div>
+                    <!-- End  PROJECT grid-->
+
+                    <div class="w3-padding-64 w3-content " id="certificates">
+                        <h2 class="w3-text-light-grey ">My certificates</h2>
+                        <hr style="width:250px " class="w3-opacity ">
+                    </div>
+                    <!-- Grid for photos -->
+                    <div class="certificate ">
+                        <div class="ccc ">
+                            <a style="text-decoration: none" href=""E:\from download\desktop\my port\img\web certifi.jpeg"" data-lightbox="certifi " data-title="caption1 ">
+                                <img src="E:\from download\desktop\my port\img\web certifi.jpeg" alt=" ">
+                                <h5>Web Designing certificate</h5>
+                            </a>
+                            <a style="text-decoration: none" href="E:\from download\desktop\my port\img\elementry.jpeg" data-lightbox="certifi " data-title="caption1 ">
+                                <img src="E:\from download\desktop\my port\img\elementry.jpeg" alt=" ">
+                                <h5>Elementary certificate</h5>
+                            </a>
+                            <a style="text-decoration: none" href="E:\from download\desktop\my port\img\msc-it certif.jpeg" data-lightbox="certifi " data-title="caption1 ">
+                                <img src="E:\from download\desktop\my port\img\msc-it certif.jpeg" alt=" ">
+                                <h5>MSC-IT certificate</h5>
+                            </a>
+                            <a style="text-decoration: none" href="E:\from download\desktop\my port\img\10th result.jpg" data-lightbox="certifi " data-title="caption1 ">
+                                <img src="E:\from download\desktop\my port\img\10th result.jpg" alt=" ">
+                                <h5>S.S.C certificate</h5>
+                            </a>
+                            <a style="text-decoration: none" href="E:\from download\desktop\my port\img\IJSART.png" data-lightbox="certifi " data-title="caption1 ">
+                                <img src="E:\from download\desktop\my port\img\IJSART.png" alt=" ">
+                                <h5>paper presentation</h5>
+                            </a>
+
+                            <a style="text-decoration: none" href="E:\from download\desktop\my port\img\pvc .png" data-lightbox="certifi " data-title="caption1 ">
+                                <img src="E:\from download\desktop\my port\img\pvc .png" alt=" ">
+                                <h5>polytechinic certificate</h5>
+                            </a>
+                        </div>
+                        <!-- End photo grid -->
+                    </div>
+
+                </div>
+                <!-- End Portfolio Section -->
+
+                <!-- Contact Section -->
+                <div class="w3-padding-64 w3-content w3-text-white " id="contact">
+                    <h2 class="w3-text-light-grey ">Contact Me</h2>
+                    <hr style="width:200px " class="w3-opacity ">
+
+
+                    <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"> <span class="contact-text place"><a style="text-decoration: none"href="https://goo.gl/maps/AQAdmgAKNBhA6d4F6?coh=178571&entry=tt" title="Get my location"><h4>Pune, Maharashtar</h4></a></span></i></i>
+
+                            <li class="list-item"><i class="fa fa-phone fa-2x"> <span class="contact-text phone"><a style="text-decoration: none" href="tel:9011046629" title="Give me a call"><h4>9011046629</h4></a></span></i></li>
+
+                            <li class="list-item"><i class="fa fa-envelope fa-2x"> <span class="contact-text gmail"><a style="text-decoration: none" href="mailto:kiransutar0011@gmail.com" title="Send me an email"><h4>kiransutar0011@gmail.com</h4></a></span></i></li>
+                    </ul>
+                    <br>
+                    <p>Let's get in touch. Send me a message:</p>
+                    <br>
+                    <form action="" target="_blank ">
+                        <p><input class="w3-input w3-padding-16 " type="text " placeholder="Name " required name="Name "></p> <br>
+                        <p><input class="w3-input w3-padding-16 " type="text " placeholder="Email " required name="Email "></p><br>
+                        <p><input class="w3-input w3-padding-16 " type="text " placeholder="Subject " required name="Subject "></p><br>
+                        <p><input class="w3-input w3-padding-16 " type="text " placeholder="Message " required name="Message "></p><br>
+                        <p>
+                            <button class="w3-button w3-light-grey w3-padding-large " type="submit ">
+                                <i class="fa fa-paper-plane "></i> SEND MESSAGE
+                                </button>
+                        </p>
+                    </form>
+                </div>
+                <!-- End Contact Section -->
+
+                <!-- Footer -->
+                <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge" id="social">
+                    <div class="fimg">
+                        <img src="E:\from download\desktop\my port\img\footer-img (1).jpeg" ,hight="350px" , width="400">
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=100092624103757&mibextid=ZbWKwL" target="blank "><i class="fa fa-facebook-official w3-hover-text-blue "></i></a>
+                    <a href="https://instagram.com/kiran.s.04?igshid=ZDdkNTZiNTM=" target="blank "><i class="fa fa-instagram w3-hover-text-pink "></i></a>
+                    <a href="https://www.snapchat.com/add/kiransutar810?share_id=b-Em-_z3M7c&locale=en-US" target="blank "><i class="fa fa-snapchat w3-hover-text-yellow "></i></a>
+                    <a href="https://pin.it/5CWP5nq" target="blank "><i class="fa fa-pinterest-p w3-hover-text-red "></i></a>
+                    <a href="https://twitter.com/kiransutar0011?t=gStOZmK_n9nPNs6bx8OAmw&s=09" target="blank "><i class="fa fa-twitter w3-hover-text-cyan "></i></a>
+                    <a href="https://www.linkedin.com/in/kiran-sutar-89678a206" target="blank "><i class="fa fa-linkedin w3-hover-text-blue "></i></a>
+                    <a href="https://youtube.com/@syej46kiransutar49" target="blank "><i class="fa fa-youtube-play w3-hover-text-red "></i></a>
+                    <p class="w3-medium ">Powered by <a href="# " target="top " class="w3-hover-text-green ">kiran sutar</a></p>
+
+
+
+                    <!-- End footer -->
+                </footer>
+
+                <!-- END PAGE CONTENT -->
+            </div>
+
+</body>
+
+</html>
+
+
+<script src="lightbox-plus-jquery.js ">
+</script>
+
+</body>
+
+</html>
